@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+.header {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  height: 300px;
+  padding: 10px;
+}
+
+.column.side {
+  flex: 1;
+}
+
+.column.middle {
+  flex: 2;
+}
+
+
+/* Create three equal columns that sits next to each other */
+
+.footer{
+  border: 1px solid gray;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  
+}
+@media (max-width:600px){
+  .row {
+    flex-direction: column;
+  }
+}

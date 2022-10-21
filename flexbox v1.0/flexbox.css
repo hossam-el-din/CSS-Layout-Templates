@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  height: 300px;
+  padding: 10px;
+}
+
+
+/* Create three equal columns that sits next to each other */
+
+.footer{
+  border: 1px solid gray;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px;
+  
+}
+@media (max-width:600px){
+  .row {
+    flex-direction: column;
+  }
+}
